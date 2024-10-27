@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Medico</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+<link href="../html/assets/img/logo.pngg" rel="icon">
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/feather.css">
+
+<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+<link rel="stylesheet" href="assets/plugins/fancybox/jquery.fancybox.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="terms page">
+
+<div class="main-wrapper">
+<header class="header">
+<nav class="navbar navbar-expand-lg header-nav nav-transparent">
+<div class="navbar-header">
+<a id="mobile_btn" href="javascript:void(0);">
+<span class="bar-icon">
+<span></span>
+<span></span>
+<span></span>
+</span>
+</a>
+
+
+<a href="index.html" class="navbar-brand logo">
+<img src="../html/assets/img/logo.png" class="img-fluid" alt="Logo">
+</a>
+</div>
+<div class="main-menu-wrapper">
+<div class="menu-header">
+<a href="index.html" class="menu-logo">
+<img src="../html/assets/img/logo.png" class="img-fluid" alt="Logo">
+</a>
+<a id="menu_close" class="menu-close" href="javascript:void(0);">
+<i class="fas fa-times"></i>
+</a>
+</div>
+<ul class="main-nav">
+<li class="has-submenu">
+<a href="index.html">Home <i class=""></i></a>
+<ul class="submenu">
+</ul>
+</li>
+<li class="has-submenu"><a href="#">Doctors <i class="fas fa-chevron-down"></i></a>
+<ul class="submenu">
+<li><a href="search.html">Find Doctor</a></li>
+</li>
+</ul>
+</li>
+
+<li class="has-submenu"><a href="#">Patients <i class="fas fa-chevron-down"></i></a>
+<ul class="submenu">
+</li>
+</li>
+<li><a>Find doctor by speciality</a><li>
+<li><a href="#">Neurologist</a>
+</li>
+<li><a href="#">Dermatologis</a>
+</li>
+<li><a href="#">Gynecologist</a>
+</li>
+<li><a href="#">Child Specialist</a>
+</li>
+<li><a href="#">Gastroenterologist</a>
+</li>
+<li><a href="#">Psychiatrist</a>
+</li>
+<li><a href="#">General Physician </a>
+</li>
+<li><a href="#">Audiologist</a>
+</li>
+</ul>
+</li>
+<li class=""><a href="specialist.html">Find doctor by Specialities <i class=""></i></a>
+
+<li><a href="#" >About us</a>
+</li>
+
+<li class="login-link">
+<a href="login.php">Login / Signup</a>
+</li>
+</ul>
+</div>
+<ul class="nav header-navbar-rht">
+<li class="nav-item contact-item">
+<div class="header-contact-img">
+<i class="far fa-hospital"></i>
+</div>
+<div class="header-contact-detail">
+<p class="contact-header">Contact</p>
+<p class="contact-info-header">+9232347889</p>
+</div>
+</li>
+<li class="nav-item">
+ <a class="nav-link header-login" href="login.html">login / Signup </a>
+</li>
+</ul>
+</nav>
+</header>
+
+<br>
+<br>
+<br>
+
+
+<div class="breadcrumb-bar">
+<div class="container-fluid">
+<div class="row align-items-center">
+<div class="col-md-8 col-12">
+<nav aria-label="breadcrumb" class="page-breadcrumb">
+</nav>
+<h2 class="breadcrumb-title">Book our best specialist in Pakistan</h2>
+</div>
+<div class="col-md-4 col-12 d-md-block d-none">
+<div class="sort-by">
+<span class="sort-title">Sort by</span>
+<span class="sortby-fliter">
+<select class="select form-select">
+<option>Select</option>
+<option class="sorting">Rating</option>
+<option class="sorting">Popular</option>
+<option class="sorting">Latest</option>
+<option class="sorting">Free</option>
+</select>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="content">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-lg-4 col-xl-3 theiaStickySidebar">
+
+<div class="card search-filter">
+<div class="card-header">
+<h4 class="card-title mb-0">Search Filter</h4>
+</div>
+<div class="card-body">
+<div class="filter-widget">
+<div class="cal-icon">
+<input type="text" class="form-control datetimepicker" placeholder="Select Date">
+</div>
+</div>
+<div class="filter-widget">
+<h4>Gender</h4>
+<div>
+<label class="custom_check">
+<input type="checkbox" name="gender_type" checked>
+<span class="checkmark"></span> Male Doctor
+</label>
+</div>
+<div>
+<label class="custom_check">
+<input type="checkbox" name="gender_type">
+<span class="checkmark"></span> Female Doctor
+</label>
+</div>
+</div>
+<div class="filter-widget">
+<h4>Select Specialist</h4>
+<div>
+<label class="custom_check">
+<input type="checkbox" name="select_specialist" checked>
+<span class="checkmark"></span> Urology
+</label>
+</div>
+<div>
+<label class="custom_check">
+<input type="checkbox" name="select_specialist" checked>
+<span class="checkmark"></span> Neurology
+</label>
+</div>
+<div>
+<label class="custom_check">
+<input type="checkbox" name="select_specialist">
+<span class="checkmark"></span> Dentist
+</label>
+</div>
+<div>
+<label class="custom_check">
+<input type="checkbox" name="select_specialist">
+<span class="checkmark"></span> Orthopedic
+</label>
+</div>
+<div>
+<label class="custom_check">
+<input type="checkbox" name="select_specialist">
+<span class="checkmark"></span> Cardiologist
+</label>
+</div>
+<div>
+<label class="custom_check">
+<input type="checkbox" name="select_specialist">
+<span class="checkmark"></span> Cardiologist
+</label>
+</div>
+</div>
+<div class="btn-search">
+<button type="button" class="btn w-100">Search</button>
+</div>
+</div>
+</div>
+
+</div>
+<div class="col-md-12 col-lg-8 col-xl-9">
+
+<div class="card">
+<div class="card-body">
+<div class="doctor-widget">
+<div class="doc-info-left">
+<div class="doctor-img">
+<a href="#">
+<img src="assets/img/doctors/doctor-thumb-01.jpg" class="img-fluid" alt="User Image">
+</a>
+</div>
+<div class="doc-info-cont">
+<h4 class="doc-name"><a href="#">Dr. Alina Mughal</a></h4>
+<p class="doc-speciality">MDS - Periodontology and Oral Implantology, BDS</p>
+<h5 class="doc-department"><img src="assets/img/specialities/specialities-05.png" class="img-fluid" alt="Speciality">Dentist</h5>
+<div class="rating">
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star"></i>
+<span class="d-inline-block average-rating">(17)</span>
+</div>
+<div class="clinic-details">
+<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Hyderabad, Pakistan</p>
+<ul class="clinic-gallery">
+<li>
+<a href="assets/img/features/feature-01.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-01.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-02.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-02.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-03.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-03.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-04.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-04.jpg" alt="Feature">
+</a>
+</li>
+</ul>
+</div>
+<div class="clinic-services">
+<span>Dental Fillings</span>
+<span> Whitneing</span>
+</div>
+</div>
+</div>
+<div class="doc-info-right">
+<div class="clini-infos">
+<ul>
+<li><i class="far fa-thumbs-up"></i> 98%</li>
+<li><i class="far fa-comment"></i> 17 Feedback</li>
+<li><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</li>
+<li><i class="far fa-money-bill-alt"></i> rs.1000 - rs.2000 <i class="fas fa-info-circle" data-bs-toggle="tooltip" title=""></i> </li>
+</ul>
+</div>
+<div class="clinic-booking">
+<a class="view-pro-btn" href="#">View Profile</a>
+<Br></Br>
+<a class="apt-btn" href="#">Book Appointment</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="card">
+<div class="card-body">
+<div class="doctor-widget">
+<div class="doc-info-left">
+<div class="doctor-img">
+<a href="#">
+<img src="assets/img/doctors/doctor-thumb-02.jpg" class="img-fluid" alt="User Image">
+</a>
+</div>
+<div class="doc-info-cont">
+<h4 class="doc-name"><a href="#">Dr. Ali</a></h4>
+<p class="doc-speciality">BDS, MDS - Oral & Maxillofacial Surgery</p>
+<h5 class="doc-department"><img src="assets/img/specialities/specialities-05.png" class="img-fluid" alt="Speciality">Dentist</h5>
+<div class="rating">
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star"></i>
+<span class="d-inline-block average-rating">(35)</span>
+</div>
+<div class="clinic-details">
+<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Hyderabad,Pakistan</p>
+<ul class="clinic-gallery">
+<li>
+<a href="assets/img/features/feature-01.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-01.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-02.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-02.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-03.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-03.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-04.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-04.jpg" alt="Feature">
+</a>
+</li>
+</ul>
+</div>
+<div class="clinic-services">
+<span>Dental Fillings</span>
+<span> Whitneing</span>
+</div>
+</div>
+</div>
+<div class="doc-info-right">
+<div class="clini-infos">
+<ul>
+<li><i class="far fa-thumbs-up"></i> 100%</li>
+<li><i class="far fa-comment"></i> 35 Feedback</li>
+<li><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</li>
+<li><i class="far fa-money-bill-alt"></i> rs.500 - rs.300 <i class="fas fa-info-circle" data-bs-toggle="tooltip" title="Lorem Ipsum"></i></li>
+</ul>
+</div>
+<div class="clinic-booking">
+<a class="view-pro-btn" href="#">View Profile</a>
+<a class="apt-btn" href="#">Book Appointment</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="card">
+<div class="card-body">
+<div class="doctor-widget">
+<div class="doc-info-left">
+<div class="doctor-img">
+<a href="#">
+<img src="assets/img/doctors/doctor-thumb-03.jpg" class="img-fluid" alt="User Image">
+</a>
+</div>
+<div class="doc-info-cont">
+<h4 class="doc-name"><a href="#">Dr. Aliza Shah</a></h4>
+<p class="doc-speciality">MBBS, MD - General Medicine, DNB - Cardiology</p>
+<p class="doc-department"><img src="assets/img/specialities/specialities-04.png" class="img-fluid" alt="Speciality">Cardiology</p>
+<div class="rating">
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star"></i>
+<span class="d-inline-block average-rating">(27)</span>
+</div>
+<div class="clinic-details">
+<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+<ul class="clinic-gallery">
+<li>
+<a href="assets/img/features/feature-01.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-01.jpg" alt="Feature">
+</a>
+</li>
+<li>
+ <a href="assets/img/features/feature-02.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-02.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-03.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-03.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-04.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-04.jpg" alt="Feature">
+</a>
+</li>
+</ul>
+</div>
+<div class="clinic-services">
+<span>Dental Fillings</span>
+<span> Whitneing</span>
+</div>
+</div>
+</div>
+<div class="doc-info-right">
+<div class="clini-infos">
+<ul>
+<li><i class="far fa-thumbs-up"></i> 99%</li>
+<li><i class="far fa-comment"></i> 35 Feedback</li>
+<li><i class="fas fa-map-marker-alt"></i> Lahore Pakistan</li>
+<li><i class="far fa-money-bill-alt"></i> rs.1000 - rs.4000 <i class="fas fa-info-circle" data-bs-toggle="tooltip" title="Lorem Ipsum"></i></li>
+</ul>
+</div>
+<div class="clinic-booking">
+<a class="view-pro-btn" href="#">View Profile</a>
+<a class="apt-btn" href="#">Book Appointment</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="card">
+<div class="card-body">
+<div class="doctor-widget">
+<div class="doc-info-left">
+<div class="doctor-img">
+<a href="#">
+<img src="assets/img/doctors/doctor-thumb-04.jpg" class="img-fluid" alt="User Image">
+</a>
+</div>
+<div class="doc-info-cont">
+<h4 class="doc-name"><a href="#">Dr. Sofia </a></h4>
+<p class="doc-speciality">MBBS, MS - General Surgery, MCh - Urology</p>
+<p class="doc-department"><img src="assets/img/specialities/specialities-01.png" class="img-fluid" alt="Speciality">Urology</p>
+<div class="rating">
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star"></i>
+<span class="d-inline-block average-rating">(4)</span>
+</div>
+<div class="clinic-details">
+<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Saddar, Hyderabad</p>
+<ul class="clinic-gallery">
+<li>
+<a href="assets/img/features/feature-01.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-01.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-02.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-02.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-03.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-03.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-04.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-04.jpg" alt="Feature">
+</a>
+</li>
+</ul>
+</div>
+<div class="clinic-services">
+<span>Dental Fillings</span>
+<span> Whitneing</span>
+</div>
+</div>
+</div>
+<div class="doc-info-right">
+<div class="clini-infos">
+<ul>
+<li><i class="far fa-thumbs-up"></i> 97%</li>
+<li><i class="far fa-comment"></i> 4 Feedback</li>
+<li><i class="fas fa-map-marker-alt"></i>Saddar, Hyderabad</li>
+<li><i class="far fa-money-bill-alt"></i> rs.1500 - rs.2500 <i class="fas fa-info-circle" data-bs-toggle="tooltip" title="Lorem Ipsum"></i></li>
+</ul>
+</div>
+<div class="clinic-booking">
+<a class="view-pro-btn" href="#">View Profile</a>
+<a class="apt-btn" href="#">Book Appointment</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="card">
+<div class="card-body">
+<div class="doctor-widget">
+<div class="doc-info-left">
+<div class="doctor-img">
+<a href="">
+<img src="assets/img/doctors/doctor-thumb-06.jpg" class="img-fluid" alt="User Image">
+</a>
+</div>
+<div class="doc-info-cont">
+<h4 class="doc-name"><a href="#">Dr. Ayesha </a></h4>
+<p class="doc-speciality">MS - Orthopaedics, MBBS, M.Ch - Orthopaedics</p>
+<p class="doc-department"><img src="assets/img/specialities/specialities-03.png" class="img-fluid" alt="Speciality">Orthopaedics</p>
+<div class="rating">
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star filled"></i>
+<i class="fas fa-star"></i>
+<span class="d-inline-block average-rating">(52)</span>
+</div>
+<div class="clinic-details">
+<p class="doc-location"><i class="fas fa-map-marker-alt"></i> Hyderabad, Pakistan</p>
+<ul class="clinic-gallery">
+<li>
+<a href="assets/img/features/feature-01.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-01.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-02.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-02.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-03.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-03.jpg" alt="Feature">
+</a>
+</li>
+<li>
+<a href="assets/img/features/feature-04.jpg" data-fancybox="gallery">
+<img src="assets/img/features/feature-04.jpg" alt="Feature">
+</a>
+</li>
+</ul>
+</div>
+<div class="clinic-services">
+<span>Dental Fillings</span>
+<span> Whitneing</span>
+</div>
+</div>
+</div>
+<div class="doc-info-right">
+<div class="clini-infos">
+<ul>
+<li><i class="far fa-thumbs-up"></i> 100%</li>
+<li><i class="far fa-comment"></i> 52 Feedback</li>
+<li><i class="fas fa-map-marker-alt"></i> Hyderabad, Pakistan</li>
+<li><i class="far fa-money-bill-alt"></i> rs.1000 - rs.5000 <i class="fas fa-info-circle" data-bs-toggle="tooltip" title="Lorem Ipsum"></i></li>
+</ul>
+</div>
+<div class="clinic-booking">
+<a class="view-pro-btn" href="#">View Profile</a>
+<a class="apt-btn" href="#">Book Appointment</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="load-more text-center">
+<a class="btn btn-primary btn-sm" href="javascript:void(0);">Load More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<footer class="footer footer-2 custom-footer">
+
+<div class="footer-top">
+<div class="container-fluid">
+<div class="row aos" data-aos="fade-up">
+<div class="col-lg-2 col-md-6">
+
+<div class="footer-widget footer-menu">
+<h2 class="footer-title footer-title-two">Quick Links</h2>
+<ul>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Our Mission</a></li>
+<li><a href="#">Our Approach</a></li>
+<li><a href="#">Our History</a></li>
+<li><a href="#">Awards And Achievements</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Appointment</a></li>
+<li><a href="#">Facilities</a></li>
+<li><a href="#">Pricing Plans</a></li>
+</ul>
+</div>
+
+</div>
+<div class="col-lg-3 col-md-6">
+
+<div class="footer-widget footer-about">
+<div class="footer-logo">
+</div>
+<div class="footer-about-content">
+<h2 style= color:white><b>MEDICO</b></h2>
+<p>Find the best doctors for different conditions and treatments in your city </p>
+</div>
+<div class="footer-widget footer-contact mt-4">
+<h2 class="footer-title footer-title-two">Our Location</h2>
+<div class="footer-contact-info">
+<div class="footer-address">
+<span><i class="fas fa-map-marker-alt"></i></span>
+<p> Office #703, Westland Trade Center, Shaheed-e-Millat Rd, Jinnah Housing Society Road, Karachi, Karachi City, Sindh 75350 </p>
+</div>
+<p>
+<i class="fas fa-phone-alt"></i>
++9233432425
+</p>
+</p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="col-lg-3 col-md-6">
+
+<div class="footer-widget footer-menu">
+<h2 class="footer-title footer-title-two">Services</h2>
+<div class="row">
+<div class="col-lg-6">
+<ul>
+<li><a href="#">Cardiology</a></li>
+<li><a href="#">Diabetes</a></li>
+<li><a href="#">Plastic Surgery</a></li>
+<li><a href="#">Gastroenterology</a></li>
+<li><a href="#">Gynecology</a></li>
+<li><a href="#">Hepatology</a></li>
+<li><a href="#">Neurology</a></li>
+<li><a href="#">Radiology</a></li>
+<li><a href="#">Rhinology</a></li>
+</ul>
+</div>
+<div class="col-lg-6">
+<ul>
+<li><a href="#">Obstetrics</a></li>
+<li><a href="#">Ophthalmology</a></li>
+<li><a href="#">Oral Health</a></li>
+<li><a href="#">Orthopedics</a></li>
+<li><a href="#">Osteology</a></li>
+<li><a href="#">Otology</a></li>
+<li><a href="#">Pediatrics</a></li>
+<li><a href="#">Psychiatry</a></li>
+<li><a href="#">Pulmonology</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+<div class="col-lg-2 col-md-6">
+
+<div class="footer-widget footer-menu">
+<h2 class="footer-title footer-title-two">For Patients</h2>
+<ul>
+<li><a href="search.html">Search for Doctors</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="patient-dashboard.html">Patient Dashboard</a></li>
+</ul>
+</div>
+ 
+</div>
+<div class="col-lg-2 col-md-6">
+
+<div class="footer-widget footer-menu">
+<h2 class="footer-title footer-title-two">For Doctors</h2>
+<ul>
+<li><a href="appointments.html">Appointments</a></li>
+<li><a href="chat.html">Chat</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="doctor-register.html">Register</a></li>
+<li><a href="doctor-dashboard.html">Doctor Dashboard</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="footer-bottom">
+<div class="container-fluid">
+
+<div class="copyright">
+<div class="row">
+<div class="col-md-6 col-lg-6">
+<div class="copyright-text">
+<p class="mb-0">&copy; 2022 <span class="primary-light">Designed by BJ</span>. All rights reserved.</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-6">
+
+<div class="copyright-menu">
+<ul class="policy-menu">
+<li><a href="term-condition.php">Terms and Conditions</a></li>
+<li><a href="privacy-policy.php">Policy</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</footer>
+
+</div>
+
+
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.0.min.js" type="27342a20d530600749cfb85f-text/javascript"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js" type="27342a20d530600749cfb85f-text/javascript"></script>
+
+<script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js" type="27342a20d530600749cfb85f-text/javascript"></script>
+<script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js" type="27342a20d530600749cfb85f-text/javascript"></script>
+
+<script src="assets/plugins/select2/js/select2.min.js" type="27342a20d530600749cfb85f-text/javascript"></script>
+
+<script src="assets/js/moment.min.js" type="27342a20d530600749cfb85f-text/javascript"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js" type="27342a20d530600749cfb85f-text/javascript"></script>
+
+<script src="assets/plugins/fancybox/jquery.fancybox.min.js" type="27342a20d530600749cfb85f-text/javascript"></script>
+
+<script src="assets/js/feather.min.js" type="27342a20d530600749cfb85f-text/javascript"></script>
+
+<script src="assets/js/script.js" type="27342a20d530600749cfb85f-text/javascript"></script>
+<script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="27342a20d530600749cfb85f-|49" defer=""></script></body>
+</html>
